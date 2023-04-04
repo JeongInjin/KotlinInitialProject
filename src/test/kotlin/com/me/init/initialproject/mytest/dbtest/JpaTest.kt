@@ -64,6 +64,9 @@ class JpaTest @Autowired constructor(
 
     @Test
     fun querydslTest1() {
+        val empty_entity: MutableList<Book> = bookRepositorySupport.findByTitle("책 제목 !@#$")
+        assertThat(empty_entity).isEmpty()
+
         val find_entity: MutableList<Book> = bookRepositorySupport.findByTitle("책 제목 1")
         assertThat(find_entity).isNotNull
         val book = find_entity[0]
