@@ -1,4 +1,4 @@
-package com.me.init.initialproject.example.config
+package com.me.init.initialproject.example.common.config
 
 import com.querydsl.jpa.impl.JPAQueryFactory
 import jakarta.persistence.EntityManager

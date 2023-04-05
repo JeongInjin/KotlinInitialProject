@@ -62,6 +62,9 @@ dependencies {
     implementation("com.vladmihalcea:hibernate-types-60:2.21.1")
     implementation("com.infobip:infobip-spring-data-jpa-querydsl-boot-starter:8.1.1")
     kapt("com.querydsl:querydsl-apt:5.0.0:jakarta")
+
+    //redis
+    implementation("org.springframework.boot:spring-boot-starter-data-redis")
 }
 
 tasks.withType<KotlinCompile> {

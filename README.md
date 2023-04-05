@@ -15,3 +15,11 @@ https://springdoc.org/v2/
 6 querydsl 추가 및 테스트 코드
 
 7.example 테스트 코드 추가
+
+
+8.Redis dependency 추가
+- $ brew install redis
+- $ brew services start redis
+- $ brew services stop redis
+- $ brew services restart redis
+

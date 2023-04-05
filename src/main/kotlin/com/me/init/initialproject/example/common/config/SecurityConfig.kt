@@ -1,4 +1,4 @@
-package com.me.init.initialproject.example.config
+package com.me.init.initialproject.example.common.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
