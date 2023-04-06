@@ -12,6 +12,11 @@ import org.springframework.data.redis.core.RedisTemplate
 import org.springframework.test.context.junit.jupiter.SpringExtension
 import java.util.concurrent.TimeUnit
 
+/**
+    - $ brew services start redis
+    - $ brew services stop redis
+    - $ brew services restart redis
+ */
 @SpringBootTest
 @ExtendWith(SpringExtension::class)
 class RedisUtilTest {

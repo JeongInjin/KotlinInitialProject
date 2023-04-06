@@ -4,4 +4,6 @@ import com.me.init.initialproject.example.entity.Book
 import org.springframework.data.jpa.repository.JpaRepository
 
 
-interface BookRepository : JpaRepository<Book, Long>
+interface BookRepository : JpaRepository<Book, Long> {
+    fun findByTitle(title: String): List<Book>
+}

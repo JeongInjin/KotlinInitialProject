@@ -11,11 +11,17 @@ class BookStore(
 
     var name: String? = null,
 
-    @OneToMany(mappedBy = "bookStore")
+    @OneToMany(mappedBy = "bookStore", cascade = [CascadeType.ALL], orphanRemoval = true)
     val books: MutableSet<Book> = mutableSetOf()
 ) {
     fun add(book: Book) {
         this.books.add(book)
+        book.bookStore = this
+    }
+
+    fun remove(book: Book) {
+        this.books.remove(book)
+        book.bookStore = null
     }
 
     override fun toString(): String {
